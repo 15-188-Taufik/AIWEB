@@ -2,6 +2,9 @@
 
 Aplikasi web untuk menganalisis ulasan produk secara otomatis menggunakan Kecerdasan Buatan (AI). Aplikasi ini dapat menentukan sentimen (Positif/Negatif/Netral) dan merangkum poin-poin penting dari ulasan panjang.
 
+## 📸 Tampilan Aplikasi (Preview)
+![Tampilan Aplikasi Product Review Analyzer](screenshot.jpeg)
+
 ## 🚀 Fitur Utama
 * **Sentiment Analysis:** Menggunakan Hugging Face (Model Roberta) untuk mendeteksi emosi ulasan.
 * **Key Points Extraction:** Menggunakan Google Gemini AI untuk merangkum ulasan menjadi bullet points.
