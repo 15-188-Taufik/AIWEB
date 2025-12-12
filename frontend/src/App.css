@@ -1,0 +1,80 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.container { text-align: center; }
+h1 { margin-bottom: 0.5rem; color: #2c3e50; }
+
+/* Input Section */
+textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+  resize: vertical;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+button:hover { background-color: #535bf2; }
+button:disabled { background-color: #ccc; cursor: not-allowed; }
+.error-msg { color: #e74c3c; font-weight: bold; margin-top: 10px; }
+
+/* Review Cards */
+.results-list { margin-top: 40px; text-align: left; }
+.review-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  background: #fff;
+  transition: transform 0.2s;
+}
+.review-card:hover { transform: translateY(-2px); }
+
+/* Sentiment Colors - Warna Warni */
+.review-card.POSITIVE { border-left: 6px solid #4CAF50; }
+.review-card.NEGATIVE { border-left: 6px solid #F44336; }
+.review-card.NEUTRAL { border-left: 6px solid #FF9800; }
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.badge.POSITIVE { background: #4CAF50; }
+.badge.NEGATIVE { background: #F44336; }
+.badge.NEUTRAL { background: #FF9800; }
+
+.card-header { display: flex; justify-content: space-between; margin-bottom: 12px; align-items: center; }
+.date { font-size: 0.8em; color: #999; }
+.review-text { font-style: italic; color: #333; font-size: 1.1em; line-height: 1.5; }
+
+.key-points { 
+  background: #f8f9fa; 
+  padding: 15px; 
+  border-radius: 8px; 
+  margin-top: 15px; 
+  font-size: 0.95em; 
+  border: 1px solid #eee;
+}

@@ -1,0 +1,15 @@
+# Abaikan folder virtual environment Python
+backend/venv/
+venv/
+__pycache__/
+
+# Abaikan folder library Node.js (sangat berat!)
+frontend/node_modules/
+frontend/dist/
+
+# PENTING: Abaikan file API Key (Keamanan)
+backend/.env
+.env
+
+# Abaikan file sistem
+.DS_Store
