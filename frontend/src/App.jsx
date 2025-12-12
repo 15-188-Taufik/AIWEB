@@ -14,13 +14,15 @@ function App() {
 
   const fetchReviews = async () => {
     try {
-      // Panggil endpoint GET dari backend kita
-      const response = await fetch('http://127.0.0.1:8000/api/reviews')
+      // PERUBAHAN DI SINI:
+      // Hapus "http://127.0.0.1:8000", gunakan path relative "/api/..."
+      const response = await fetch('/api/reviews')
+      
       const data = await response.json()
       setReviews(data)
     } catch (err) {
       console.error("Gagal ambil data:", err)
-      setError("Gagal mengambil data. Pastikan Backend sudah jalan!")
+      setError("Gagal mengambil data. (Cek koneksi backend)")
     }
   }
 
@@ -33,8 +35,9 @@ function App() {
     setError(null)
 
     try {
-      // Kirim text ke endpoint POST backend
-      const response = await fetch('http://127.0.0.1:8000/api/analyze-review', {
+      // PERUBAHAN DI SINI:
+      // Hapus "http://127.0.0.1:8000", gunakan path relative "/api/..."
+      const response = await fetch('/api/analyze-review', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: inputText }),
