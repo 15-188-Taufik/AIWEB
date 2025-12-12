@@ -35,7 +35,7 @@ class ReviewResponse(BaseModel):
     key_points: str
     
     class Config:
-        orm_mode = True
+        from_attributes = True  # <-- GANTI INI (Dulunya orm_mode = True)
 
 # --- Endpoints ---
 
