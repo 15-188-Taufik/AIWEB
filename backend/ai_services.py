@@ -62,7 +62,7 @@ def extract_key_points(text: str):
         # --- PERBAIKAN 2: GANTI KE GEMINI 1.5 FLASH ---
         # Model ini adalah standar Free Tier yang paling stabil saat ini.
         # Karena librarymu sudah update, ini PASTI jalan.
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         prompt = (
             f"Summarize this product review into 3 short bullet points. "
